@@ -1,6 +1,6 @@
 FROM archlinux:latest
 
-RUN pacman -Syu --noconfirm && pacman -S --noconfirm git vim nodejs wget zsh npm python-pip htop && \
+RUN pacman -Syu --noconfirm && pacman -S --noconfirm git vim nodejs wget zsh npm python-pip htop texlive-most && \
       git config --global user.name "John Doe" && \
       git config --global user.email johndoe@example.com
 
