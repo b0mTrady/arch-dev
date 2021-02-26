@@ -1,6 +1,6 @@
-FROM archlinux:latest
+FROM archlinux:base
 
-RUN pacman -Syu --noconfirm && pacman -S --noconfirm git vim nodejs wget zsh npm python-pip htop texlive-most && \
+RUN pacman -Syu --noconfirm --noconfirm --needed git vim nodejs wget zsh npm python-pip rust make cmake clang && \
       git config --global user.name "John Doe" && \
       git config --global user.email johndoe@example.com
 
